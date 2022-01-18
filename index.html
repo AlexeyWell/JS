@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+ <head>
+  <meta charset="utf-8">
+  <title>JS задачи</title>
+ </head>
+
+ <body>
+    <div class="header"><img src="img/dinozavrik-2.jpg"><h1>JS задачи</h1> <div class="foto"></div></div>
+    <div class="content">
+        
+        <div class="tasks">
+        <!---1--->        
+            <div class="task"><p class="text">1. написати программу яка знаходе більше з двох чисел, та з 3, використавши оператор if
+            </p><a href="" class="code">Смотреть код</a>
+            <div class="window-a">
+                <code>
+                    var num1 = prompt("Введите первое число", 1);<br>
+                    num2 = prompt("Введите второе число", 2);<br>
+                    num3 = prompt("Введите третье число", 3);<br>
+                    <br>
+                    if( num1 &gt; num3 &amp;&amp; num1&gt;num2 ){document.write("Большее число:" + num1);} <br>
+                    else if( num2&gt;num1 &amp;&amp; num2&gt;num3 ){document.write("Большее число:" + num2);}<br>
+                    else{document.write("Большее число:" + num3);}
+                </code>
+            </div>
+            <a href="js 1.html" class="bnt1">Решение</a></div>
+        <!---2--->
+            <div class="task"><p class="text">2. написати програму в якій створити масив з любими іменами розміром мінімум 6, 
+            1-вивести їх по порядку,2-вивести 
+            першого, 3- вивести останнього</p><a href="" class="code">Смотреть код</a>
+            <div class="window-b">
+                <code>
+                    const people = ["Andriy", "Alexey", "Dima", "Valik", "Maks", "Denis"];<br>
+                    alert(people);<br>
+                    alert(people[0]);<br>
+                    alert(people[5]);<br>
+                </code>
+            </div>
+            <a href="js 2.html" class="bnt1">Решение</a></div>
+        <!---3--->    
+            <div class="task"><p class="text">3. написати программу з масивом будь яких чисел розміром мінімум 6, вивести 
+            найбільше, найменши, добуток всіх, суму всіх, 
+            посортувати по порядку використавши цикл фор та алгоритм бульбашкового сортування.</p>
+            <a href="" class="code">Смотреть код</a>
+            <div class="window-c">
+                <code class="view">
+                    var num = [10, 3, 8, 82, 4, 5, 32, 108];<br>
+                    m=0;<br>
+                    <br>
+                    1.for (a=0; a&lt;=m; a++){     //большее число<br>
+                    if (num[a]&gt;m) { <br>
+                    m=num[a];}}<br>
+                    <br>
+                    2.var m1=m                     //меньшее число<br>
+                    for (a=0; a&lt;=m; a++){<br>
+                    if (num[a]&lt;m1) {     <br>
+                    m1=num[a];}}<br>
+                    <br>
+                    3.var m2=1;                     //суммируем числа<br>
+                    for (a=0; a&lt;num.length; a++){<br>
+                    m2+=num[a]}<br>
+                    <br>
+                    4.var m3=1;                     //умножаем числа<br>
+                    for (a=0; a&lt;num.length; a++){    <br>
+                    m3*=num[a]}<br>
+                    <br>
+                    5.for (b=0; b&lt;num.length; b++) {    //по порядку використавши алгоритм бульбашкового сортування <br>
+                    for (a=0; a&lt;num.length-1; a++) { <br>
+                    if (num[a]&gt;num[a+1]) {<br>
+                    var rep=num[a]<br>
+                    num[a]=num[a+1]<br>
+                    num[a+1]=rep}}}<br>
+                    <br>
+                    let name =("Большее число: "+ m); //вывод данных<br>
+                    let name2 =("Меньшее число: "+ m1);<br>
+                    let name3 =("Суммируем  массив: "+ m2);<br>
+                    let name4 =("Умножили  массив: "+ m3);<br>
+                    let name5 =("По возрастанию: "+ num);<br>
+                    elem1.innerHTML = name;<br>
+                    elem2.innerHTML = name2;<br>
+                    elem3.innerHTML = name3;<br>
+                    elem4.innerHTML = name4;<br>
+                    elem5.innerHTML = name5;
+                    </code>
+            </div>
+            <a href="js 3.html" class="bnt1">Решение</a></div>
+        <!---4--->    
+            <div class="task"><p class="text">4. згенерувати масив з випадковими числами з можливістью задання розміру, використавши 
+            фор для генерацції чисел рандон, 
+            для додавання числа в маси -пуш, посортувати масив за допомогою функції джава, **реалізувати одну з цих функцій 
+            самому</p><a href="" class="code">Смотреть код</a>
+            <div class="nwindow">
+                <code>
+                </code>
+            </div>
+            <a href="" class="code">Решение</a><div class="nwindow"></div></div>
+        <!---5--->    
+            <div class="task"><p class="text">5. написати функцію яка рахує суму масиву, написати функцію яка рахує число 
+            фібаначі за допомогою рекурсивного метода*, 
+            написати функцію яка на основі трьох чисел може сказати чи можна побудувати з них трикутник, написати функцію яка рахує 
+            площу трикутника</p><a href="" class="code">Смотреть код</a>
+            <div class="nwindow">
+                <code>
+                </code>
+            </div>
+            <a href="" class="code">Решение</a><div class="nwindow"></div></div>
+        <!---7--->    
+            <div class="task"><p class="text">7. свестати сторінку на якій за допомогою джава створюється квадрат(в том має 
+            зявитися тег дів любого кольору, розміром н</p><a href="" class="code">Смотреть код</a>
+            <div class="nwindow">
+                <code>
+                </code>
+            </div>
+            <a href="" class="code">Решение</a><div class="nwindow"></div></div>
+        <!---8--->    
+            <div class="task"><p class="text">8. при клику на вибраний елемент виводити повідомлення ви клікнули, при кліку 
+            змінити колір фігури, кожних 15 сек повертати 
+            фігуру на 5 градусів </p><a href="" class="code">Смотреть код</a>
+            <div class="nwindow">
+                <code>
+                </code>
+            </div>
+            <a href="" class="code">Решение</a><div class="nwindow"></div></div>
+        </div>
+        <div class="quatro"><img src="img/кот2.jpg"><a href="Квадрат/Смена цвета+вращение.html"><div class="quat"></div></a></div>
+    </div>
+ </body>
+<style>
+    
+
+
+    body{
+        
+        font-family: cursive;
+    }
+    .header{
+        display: flex;
+        flex-direction: row; 
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .quatro{
+        display: flex;
+        flex-direction: row;
+        height: 160px;
+        margin: 20px;
+        margin-bottom: 5px;
+        margin-left: 100px;
+    }
+    .quat{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        background-color: rgb(236, 18, 18);
+        animation: nev 30s infinite steps(72);
+        }
+        
+        @keyframes nev {
+        100%{
+        transform: rotate(360deg); 
+        }
+        }
+    .tasks{
+        display: flex;
+        flex-direction: column;
+        width: 62% ;
+        justify-content:flex-start;
+        }
+    .task{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(197, 241, 227);
+        border: 1px soid black;
+        margin-top: 20px;
+        border-radius: 7px;
+        padding: 1px;
+        padding-left: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h1{
+        text-align: center;
+    }
+    .text{
+        width: 80% ;
+        text-align: justify;
+    }
+      .code:hover ~ .window-a{
+        height: 25%;
+        }
+        .code:hover ~ .window-b{
+        height: 15%;
+        }
+        .code:hover ~ .window-c{
+        height: 90%;
+        }
+      .code:hover ~ .nwindow {
+        height: 450px;
+       }
+    .code,.bnt1{
+        display: block;
+        text-decoration: none;
+        background-color: rgb(23, 219, 39);
+        height: 30px;
+        border-radius: 7px;
+        text-align: center;
+        padding: 3px;
+        color: blanchedalmond;
+    }
+    .code{
+        width: 150px;
+        margin: 15px;
+      }
+    .bnt1{     
+        width: 150px;
+        padding: 3px;
+        margin: 15px;
+    }
+    .foto{ 
+        width: 474px;
+        height: 450px;
+        background-image: url(img/chak-norris_8870091_orig_.jpg);
+        margin: 20px;
+        border-radius: 15px;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+    }
+    h1{
+        margin: 30px;
+    }
+    .window, .nwindow, .window-a, .window-b, .window-c{
+        position: absolute;
+        height: 0;
+        overflow: hidden;
+        width: 520px;
+        transition: .5s;
+        border-radius: 15px;
+        left: 8px;
+    }
+    .window {
+        background-color: rgb(0, 0, 0);
+        color: rgb(209, 212, 30); 
+      }
+      .nwindow {
+        background-image: url(img//quote-2022-01-17-5535b4ff7b38d8c8bfc52256efdbb76.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+      }
+      .window-a, .window-b, .window-c{
+        background-color: rgb(0, 0, 0);
+        color: rgb(209, 212, 30);
+      }
+      code{
+        display: inline-block;
+        margin: 10px;
+      }
+   
+    
+      
+</style>
+

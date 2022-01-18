@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Квадрат</title>
+ </head>
+
+  <body>
+    <div id="sl" class="view">
+        <div id="slide1" class="slide-1"><a href="#slide2" class="next"><div class="go"></div></a></div>
+        <div id="slide2" class="slide-2"> <a href="#slide3"class="next"><div class="go"></div></a></div>     
+        <div id="slide3" class="slide-3"><a href="#slide1"class="next"><div class="go"></div></a></div>     
+    </div>
+  </body>
+<style> 
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 15%;
+}
+
+.next{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.go{
+height: 40px;
+width: 40px;
+background-color: rgb(82, 82, 99);
+border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+width: 0px;
+}
+.slide-1,.slide-2,.slide-3{
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 0 0 100%;
+}
+.slide-1 {
+background-color: #f99;
+}
+.slide-2 {
+background-color: rgb(18, 184, 32);
+}
+.slide-3 {
+background-color: rgb(12, 49, 211);
+}
+.view {
+animation: nev 30s infinite steps(72);
+height: 200px;
+width: 200px;
+display: flex;
+overflow-x: scroll;
+}
+@keyframes nev {
+100%{
+transform: rotate(360deg); 
+}
+}
+</style>
+
+
+
