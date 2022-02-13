@@ -68,7 +68,7 @@
                     for (a=0; a&lt;num.length-1; a++) { <br>
                     if (num[a]&gt;num[a+1]) {<br>
                     var rep=num[a]<br>
-                    num[a]=num[a+1]<br>
+                    num[a]=num[a+1]<br>-
                     num[a+1]=rep}}}<br>
                     <br>
                     let name =("Большее число: "+ m); //вывод данных<br>
@@ -89,21 +89,19 @@
             фор для генерацції чисел рандон, 
             для додавання числа в маси -пуш, посортувати масив за допомогою функції джава, **реалізувати одну з цих функцій 
             самому</p><a href="" class="code">Смотреть код</a>
-            <div class="nwindow">
-                <code>
-                </code>
+            <div class="window-e">
+                <img src="img/код 4.jpg" class="img1">
             </div>
-            <a href="" class="code">Решение</a><div class="nwindow"></div></div>
+            <a href="js 4.html" class="code">Решение</a></div>
         <!---5--->    
             <div class="task"><p class="text">5. написати функцію яка рахує суму масиву, написати функцію яка рахує число 
             фібаначі за допомогою рекурсивного метода*, 
             написати функцію яка на основі трьох чисел може сказати чи можна побудувати з них трикутник, написати функцію яка рахує 
             площу трикутника</p><a href="" class="code">Смотреть код</a>
-            <div class="nwindow">
-                <code>
-                </code>
+            <div class="window-d">
+                <img src="img/код 5.jpg" class="img1">
             </div>
-            <a href="" class="code">Решение</a><div class="nwindow"></div></div>
+            <a href="js 5.html" class="code">Решение</a></div>
         <!---7--->    
             <div class="task"><p class="text">7. свестати сторінку на якій за допомогою джава створюється квадрат(в том має 
             зявитися тег дів любого кольору, розміром н</p><a href="" class="code">Смотреть код</a>
@@ -198,9 +196,20 @@
         .code:hover ~ .window-c{
         height: 90%;
         }
-      .code:hover ~ .nwindow {
+        .code:hover ~ .window-d{
+        height: 48%;
+        }
+        .code:hover ~ .window-e{
+        height: 33%;
+        }
+        .code:hover ~ .nwindow {
         height: 450px;
        }
+       
+    .img1 {
+        width:  520px;
+        height: auto;
+    }
     .code,.bnt1{
         display: block;
         text-decoration: none;
@@ -233,7 +242,7 @@
     h1{
         margin: 30px;
     }
-    .window, .nwindow, .window-a, .window-b, .window-c{
+    .window, .nwindow, .window-a, .window-b, .window-c, .window-d,.window-e{
         position: absolute;
         height: 0;
         overflow: hidden;
@@ -251,16 +260,13 @@
         background-size: auto;
         background-repeat: no-repeat;
       }
-      .window-a, .window-b, .window-c{
+      .window-a, .window-b, .window-c, .window-d,.window-e{
         background-color: rgb(0, 0, 0);
         color: rgb(209, 212, 30);
       }
       code{
         display: inline-block;
         margin: 10px;
-      }
-   
-    
-      
+      }    
 </style>
 

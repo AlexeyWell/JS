@@ -13,39 +13,39 @@
        <script>  
            var num = [10, 3, 8, 82, 4, 5, 32, 108];
            m=0;
-           for (a=0; a<=m; a++){  //большее число
-           if (num[a]>m) { 
-           m=num[a];}}
-           
-           var m1=m                //меньшее число
+           for (a=0; a<=m; a++){  //>
+               if (num[a]>m) { 
+                   m=num[a];}
+           }
+           var m1=m                //<
            for (a=0; a<=m; a++){
-           if (num[a]<m1) { 
-           m1=num[a];}}
-               
-           var m2=1;                     //суммируем числа
+               if (num[a]<m1) { 
+                   m1=num[a];}
+                   }
+           var m2=1;                     //+
            for (a=0; a<num.length; a++){
-           m2+=num[a]}
-           
-           var m3=1;                     //умножаем числа
+                m2+=num[a]
+                }
+           var m3=1;                     //*
            for (a=0; a<num.length; a++){
-           m3*=num[a]}
-           
-           for (b=0; b<num.length; b++) {  //по порядку використавши алгоритм бульбашкового сортування 
-           for (a=0; a<num.length-1; a++) {
-           if (num[a]>num[a+1]) {
-           var rep=num[a]
-           num[a]=num[a+1]
-           num[a+1]=rep}}}
-           
-           let name =("Большее число: "+ m); //вывод данных
-           let name2 =("Меньшее число: "+ m1);
-           let name3 =("Суммируем  массив: "+ m2);
-           let name4 =("Умножили  массив: "+ m3);
-           let name5 =("По возрастанию: "+ num);
-           elem1.innerHTML = name;
-           elem2.innerHTML = name2;
-           elem3.innerHTML = name3;
-           elem4.innerHTML = name4;
-           elem5.innerHTML = name5;
+           m3*=num[a]
+           }
+           for (b=0; b<num.length; b++) {  //sort
+                for (a=0; a<num.length-1; a++) {
+                    if (num[a]>num[a+1]) {
+                    var rep=num[a]
+                    num[a]=num[a+1]
+                    num[a+1]=rep}}
+                    }
+           let name =("Большее число: "+ m); 
+                name2 =("Меньшее число: "+ m1);
+                name3 =("Суммируем  массив: "+ m2);
+                name4 =("Умножили  массив: "+ m3);
+                name5 =("По возрастанию: "+ num);
+                elem1.innerHTML = name;
+                elem2.innerHTML = name2;
+                elem3.innerHTML = name3;
+                elem4.innerHTML = name4;
+                elem5.innerHTML = name5;
        </script>
  </body>

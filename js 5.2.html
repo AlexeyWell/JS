@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Число фібаначі</title>
+</head>
+<body>
+<h3>Число фібаначі!</h3>
+<p>Введіть бажане число фібаначі:</p>
+<input id="tio" type="text" ><br>
+<a href=""><bottom id="btn">Підрахуй</bottom></a>
+<style>
+a{
+    text-decoration: none;
+    color: black;
+}
+#btn{
+font-size: 18px;
+margin-top: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+width: 175px;
+background-color: rgb(164, 226, 106);
+border-radius: 15px;
+
+}  
+</style>
+<script> // fibonacci number
+    btn.addEventListener("click", function(){
+        let nu1 = document.getElementById("tio");
+            num1 = parseInt(nu1.value);
+                function fibo (ab){
+                    if (ab === 0){
+                        return 0;
+                    }
+                    if (ab === 1){
+                        return 1;
+                    }
+                    else{
+                        return fibo(ab - 1) + fibo(ab - 2);
+                    }};
+    var result = fibo(num1); 
+    alert(result);     
+    });
+</script>
+</body>
+
+</html>

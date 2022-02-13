@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 4</title>
+</head>
+<body>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #btn{
+        font-size: 18px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 175px;
+        background-color: rgb(164, 226, 106);
+        border-radius: 15px;
+        
+        }  
+        </style>
+    <p>Введите длину массива: </p>
+    <input id="n1" type="text" ><br>
+    <a href=""><bottom id="btn">Підрахуй</bottom></a>
+    <script>
+        let nu1 = document.getElementById("n1");
+        btn.addEventListener("click", function (){
+            let numLength = parseInt(nu1.value);
+            let arrNums = []; 
+                for (a = 0; a < numLength; a++){
+                    arrNums.push(Math.floor(Math.random()*1000))}
+                    alert ("Массив рамдомных целых чисел(0-999):  " 
+                        + arrNums + "\n\Отсортированный масив(по возрастанию):  " 
+                        + arrNums.sort(function(a, b){return a - b})
+                        );
+                    });
+    </script>
+</body>
+</html>

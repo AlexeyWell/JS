@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трикутник та його площа</title>
+</head>
+<body>
+<h3>Трикутник та його площа!</h3>
+<p>ВВЕДІТЬ:</p>
+<p>Першу сторону:</p>
+<input id="tio" type="text" ><br>
+<p>Другу сторону:</p>
+<input id="toi" type="text" ><br>
+<p>Третю сторону:</p>
+<input id="oit" type="text" ><br>
+<a href=""><bottom id="btn">Підрахуй</bottom></a>
+<style>
+a{
+text-decoration: none;
+color: black;
+}
+#btn{
+font-size: 18px;
+margin-top: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+width: 175px;
+background-color: rgb(164, 226, 106);
+border-radius: 15px;
+
+}  
+</style>
+<script>//triangle
+let num1 = document.getElementById("tio");
+    num2 = document.getElementById("toi");
+    num3 = document.getElementById("oit");
+        btn.addEventListener("click", function (){
+            let ab = parseInt(num1.value);
+            bc = parseInt(num2.value);
+            ca = parseInt(num3.value);
+            polSum = (ab + bc + ca)/2;
+            areaTriangle = Math.sqrt(polSum*(polSum - ab)*(polSum - bc)*(polSum - ca));
+                if( polSum > ab && polSum > bc && polSum > ca){
+                    alert ('Поздравляем, у Вас получился треугольник!\n\Площадь данного треугольника:  ' + areaTriangle.toFixed(2));} 
+                else{
+                  alert ('К сожалению, треугольник у Вас не получился!')}
+                });
+</script>
+</body>
+
+</html>

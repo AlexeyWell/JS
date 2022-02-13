@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підрахунок сумми масиву</title>
+</head>
+<body>
+    <h3>Підрахунок сумми масиву!</h3>
+    <p>ВВЕДІТЬ:</p>
+    <p>1 число:</p>
+    <input id="n1" type="text" ><br>
+    <p>2 число:</p>
+    <input id="n2" type="text" ><br>
+    <p>3 число:</p>
+    <input id="n3" type="text" ><br>
+    <p>4 число:</p>
+    <input id="n4" type="text" ><br>
+    <p>5 число:</p>
+    <input id="n5" type="text" ><br>
+    <p>6 число:</p>
+    <input id="n6" type="text" ><br>
+    <a href=""><bottom id="btn">Підрахуй</bottom></a>
+<style>
+a{
+    text-decoration: none;
+    color: black;
+}
+#btn{
+font-size: 18px;
+margin-top: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+width: 175px;
+background-color: rgb(164, 226, 106);
+border-radius: 15px;
+
+}  
+</style>
+    <script>// array sum
+    let nu1 = document.getElementById("n1");
+        nu2 = document.getElementById("n2");
+        nu3 = document.getElementById("n3");
+        nu4 = document.getElementById("n4");
+        nu5 = document.getElementById("n5");
+        nu6 = document.getElementById("n6");
+            btn.addEventListener("click", function (){
+                let num1 = parseInt(nu1.value);
+                num2 = parseInt(nu2.value);
+                num3 = parseInt(nu3.value);
+                num4 = parseInt(nu4.value);
+                num5 = parseInt(nu5.value);
+                num6 = parseInt(nu6.value);
+                arrNums = [num1, num2, num3, num4, num5, num6];
+                    m2=0;                   
+                    for (a = 0; a < arrNums.length; a++){m2 += arrNums[a]}
+                    alert ("Сума данного массиву:  " + m2);
+                    });
+    </script>
+</body>
+</html>
